@@ -22,6 +22,7 @@ def calculate_cost(solution, cost_matrix, facility_costs):
     for client in range(num_clients):
         min_cost = np.inf
         for facility in range(num_facilities):
+            # Se a instalação estiver aberta
             if solution[facility]:
                 cost_val = cost_matrix[client, facility]
                 if cost_val < min_cost:

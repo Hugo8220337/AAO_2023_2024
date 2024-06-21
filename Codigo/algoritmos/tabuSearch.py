@@ -69,7 +69,7 @@ def tabu_search_core(cost_matrix, facility_costs, initial_solution, max_iteratio
     best_solution = current_solution.copy()
     best_cost = current_cost
     tabu_list = np.zeros((tabu_tenure, num_facilities), dtype=np.bool_)
-    tabu_list_ptr = 0
+    tabu_list_ptr = 0 # pointer para a posição atual na tabu list
 
     for iteration in range(max_iterations):
         neighborhood = []
@@ -96,8 +96,9 @@ def tabu_search_core(cost_matrix, facility_costs, initial_solution, max_iteratio
             current_cost = best_cost
 
             # Atualiza a lista tabu
-            tabu_list[tabu_list_ptr % tabu_tenure] = current_solution.copy()
+            tabu_list[tabu_list_ptr % tabu_tenure] = current_solution.copy() 
             tabu_list_ptr += 1
+            # tabu_list_ptr % tabu_tenure é  Calcula o índice na tabu_list onde a solução atual será armazenada. Isso garante que o índice esteja sempre dentro dos limites da tabu_list.
 
     return best_solution, best_cost
 
