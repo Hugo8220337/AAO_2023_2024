@@ -6,6 +6,12 @@
   <img src="http://img.shields.io/static/v1?style=for-the-badge&label=Grade&message=?&color=sucess"/>
 </p>
 
+---
+
+<h2>Languages</h2>
+<p align="left"> 
+  <img src="https://img.shields.io/badge/python-3670A0?style=for-the-badge&amp;logo=python&amp;logoColor=ffdd54" alt="Python">  	
+</p>
 
 ---
 
