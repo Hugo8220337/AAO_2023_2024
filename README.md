@@ -3,7 +3,7 @@
 <p>
   <img src="http://img.shields.io/static/v1?style=for-the-badge&label=School%20year&message=2023/2024&color=sucess"/>
   <img src="http://img.shields.io/static/v1?style=for-the-badge&label=Discipline&message=AAO&color=sucess"/>
-  <img src="http://img.shields.io/static/v1?style=for-the-badge&label=Grade&message=?&color=sucess"/>
+  <img src="http://img.shields.io/static/v1?style=for-the-badge&label=Grade&message=14.4&color=sucess"/>
 </p>
 
 ---
@@ -18,6 +18,10 @@
 
 # AAO_2023_2024
 Estudo de heurísticas para o problema de localização de instalações sem restrições de capacidade (UFLP)
+
+## Dependências
+* numpy
+* numba
 
 ## Autores
 * César Castelo
